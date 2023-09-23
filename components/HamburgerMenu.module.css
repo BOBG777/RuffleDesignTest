@@ -1,0 +1,86 @@
+/* HamburgerMenu.module.css */
+
+.button {
+  background-color: #ff7f00; /* 橘红色背景 */
+  border: none;
+  cursor: pointer;
+  height: 60px;
+  width: 50px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  outline: none;
+  overflow: visible;
+}
+
+.line {
+  background-color: white;
+  height: 5px;
+  width: 20px;
+  transition: all 0.3s ease;
+}
+
+.line1 {
+  transform-origin: center;
+}
+
+.line2 {
+  margin: 5px 0;
+}
+
+.line3 {
+  transform-origin: center;
+}
+
+.open .line1 {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.open .line2 {
+  opacity: 0;
+}
+
+.open .line3 {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Modal样式 */
+.modalContent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* 偏黑的半透明背景 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* 如果内容超出屏幕，允许滚动 */
+}
+
+/* Modal中的ul样式 */
+.modalContent ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* Modal中的li样式 */
+.modalContent li {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Modal中的div样式 */
+.modalContent div {
+  margin-top: 20px;
+  text-align: center;
+}
