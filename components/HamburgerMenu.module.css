@@ -1,12 +1,26 @@
 /* HamburgerMenu.module.css */
 
+.headerContainer {
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  align-self: flex-start;
+  margin-left: 0; /* 确保 Logo 没有左边距 */
+}
+
 .button {
+  align-self: flex-end;
   background-color: #ff7f00; /* 橘红色背景 */
   border: none;
   cursor: pointer;
-  height: 60px;
-  width: 50px;
-  margin-right: 10px;
+  height: 80px; /* 调整为正方形的大小 */
+  width: 80px;  /* 调整为正方形的大小 */
+  margin-right: 0; /* 移除右边距 */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +33,7 @@
 .line {
   background-color: white;
   height: 5px;
-  width: 20px;
+  width: 30px; /* 调整横线的长度 */
   transition: all 0.3s ease;
 }
 
@@ -54,7 +68,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* 偏黑的半透明背景 */
+  background-color: black; /* 全黑色背景 */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,14 +83,16 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  text-align: center;
+  text-align: left; /* 文字左对齐 */
+  width: 100%; /* 宽度为100% */
 }
 
 /* Modal中的li样式 */
 .modalContent li {
   margin: 10px 0;
-  font-size: 1.5rem;
+  font-size: 3rem;
   cursor: pointer;
+  color: white; /* 字体颜色为白色 */
 }
 
 /* Modal中的div样式 */
