@@ -82,8 +82,10 @@
 .modalContent ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-top: 100px;
+  margin-left: 60px;
   text-align: left; /* 文字左对齐 */
+  font-weight: 700;
   width: 100%; /* 宽度为100% */
 }
 
@@ -97,6 +99,17 @@
 
 /* Modal中的div样式 */
 .modalContent div {
-  margin-top: 20px;
-  text-align: center;
+  align-self: flex-start;
+  margin-left: 40px;
+  margin-top: 20px; /* 已存在的样式，保持不变 */
+  text-align: left; /* 已存在的样式，保持不变 */
+  padding-top: 20px; /* 为 div 添加上边距，与 ul 之间有一定距离 */
+}
+
+/* Modal中的p样式 */
+.modalContent p {
+  border-bottom: 2px solid white; /* 添加白色的底部边框 */
+  color: white; /* 字体颜色为白色 */
+  padding-bottom: 10px; /* 使边框与文本之间有一定的距离 */
+  margin-bottom: 10px; /* 为每个 p 元素添加底部外边距，使它们之间有间距 */
 }
