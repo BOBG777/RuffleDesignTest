@@ -5,7 +5,8 @@
   align-items: center;
   width: 100%;
   padding: 20px;
-  background-color: #333;
+  margin-top: 300px;
+  background-color: black;
   color: white;
 }
 
@@ -13,43 +14,58 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%; /* 调整为 80% 以创建左右边距 */
-  margin: 0 auto; /* 使内容居中 */
+  width: 60%; 
+  margin: 0 auto;
 }
 
 .left {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
-  align-items: flex-start; /* 添加这一行 */
+  align-items: flex-start;
 }
 
 .left p {
-  display: inline-block; /* 使元素的宽度与其内容相匹配 */
-  border-bottom: 2px solid white; /* 添加下划线 */
-  padding-bottom: 5px; /* 在字体和下划线之间添加一些空间 */
-  transition: border-bottom 0.3s ease; /* 平滑的过渡效果 */
+  display: inline-block;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  transition: border-bottom 0.3s ease;
 }
 
 .left p:hover {
-  border-bottom: none; /* 鼠标悬浮时下划线消失 */
+  border-bottom: none;
+}
+
+.left p .arrowSmall {
+    display: inline-block;
+    transform: rotate(-45deg);
 }
 
 .right {
+  display: flex;
+  align-items: center;
   flex-basis: 40%;
 }
 
 .right p {
   font-size: 3rem;
+  margin-right: 10px;
 }
 
 .arrow {
   font-size: 2rem;
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.right:hover .arrow {
+  opacity: 1;
 }
 
 .logoContainer {
   display: flex;
   justify-content: flex-start;
   width: 60%;
-  margin-top: 20px; /* 增加上边距以与上面的内容分开 */
+  margin-top: 20px;
 }

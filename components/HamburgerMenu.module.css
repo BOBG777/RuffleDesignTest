@@ -75,7 +75,13 @@
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  overflow-y: auto; /* 如果内容超出屏幕，允许滚动 */
+  overflow-y: scroll;
+  scrollbar-width: none; /* 对于Firefox */
+  -ms-overflow-style: none; /* 对于Internet Explorer和Edge */
+}
+
+.modalContent::-webkit-scrollbar {
+  display: none; /* 对于Chrome, Safari和Opera */
 }
 
 /* Modal中的ul样式 */
